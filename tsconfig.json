@@ -17,7 +17,7 @@
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "baseUrl": "src/vasu-playwright",
+    "baseUrl": "src/kehe-playwright",
     "paths": {
       "@pages": ["./tests/pages"],
       "@testdata": ["./tests/testdata"]
@@ -29,6 +29,11 @@
     "noImplicitReturns": true, // Ensures that all code paths in a function explicitly return a value
     "typeRoots": ["node_modules/@types"] // Specifies the location of type declaration files
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts", "playwright.config.ts"],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "playwright.config.ts",
+    "tests/specs/retailer-demo-parallel-execution.spec.ts"
+  ],
   "exclude": ["node_modules"]
 }

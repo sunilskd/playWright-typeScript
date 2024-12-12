@@ -49,13 +49,20 @@ export default defineConfig({
    * The reporter to use. This can be set to use a different value on CI.
    * See https://playwright.dev/docs/test-reporters
    */
-  reporter: [['./src/vasu-playwright/setup/custom-logger.ts'], ['html', { open: 'never' }], ['dot']],
+  reporter: [['./src/kehe-playwright/setup/custom-logger.ts'], ['html', { open: 'never' }], ['dot']],
+
+  // reporter: [
+  //  [CustomReporter],
+  // ['list'], // You can add other reporters like 'list' for console output
+  //],
+  // other configurations
+
   /**
    * Shared settings for all the projects below.
    * See https://playwright.dev/docs/api/class-testoptions
    */
-  globalSetup: require.resolve('./src/vasu-playwright/setup/global-setup.ts'),
-  globalTeardown: require.resolve('./src/vasu-playwright/setup/global-teardown.ts'),
+  globalSetup: require.resolve('./src/kehe-playwright/setup/global-setup.ts'),
+  globalTeardown: require.resolve('./src/kehe-playwright/setup/global-teardown.ts'),
   timeout: TEST_TIMEOUT,
   expect: {
     timeout: EXPECT_TIMEOUT,
@@ -94,6 +101,8 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        headless: false,
         viewport: { width: 1600, height: 1000 },
         launchOptions: {
           args: ['--disable-web-security'],
