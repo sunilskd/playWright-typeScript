@@ -1,5 +1,8 @@
 import { click, clickAndNavigate, fill, gotoURL } from 'utils/action-utils';
-import { failureLoginCredentials, successLoginCredentials } from '../../testdata/sauce-demo-test-data';
+import {
+  failureLoginCredentials,
+  successLoginCredentials,
+} from '../../../testdata/sample-testdata/sauce-demo-test-data';
 import { expectElementToBeVisible } from 'utils/assert-utils';
 import { getLocator, getLocatorByPlaceholder, getLocatorByRole } from 'utils/locator-utils';
 

@@ -30,7 +30,7 @@
     "*.{ts}": "eslint --fix"
   },
   "dependencies": {
-    "@playwright/test": "^1.37.1",
+    "@playwright/test": "^1.49.0",
     "@types/node": "^20.5.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
@@ -47,8 +47,8 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
     "prettier": "^3.0.2",
-    "typescript": "5.1.6",
     "tslib": "^2.6.2",
+    "typescript": "5.1.6",
     "winston": "^3.10.0"
   },
   "scripts": {

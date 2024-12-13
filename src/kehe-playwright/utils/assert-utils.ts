@@ -326,3 +326,5 @@ export async function expectPageToHaveTitle(titleOrRegExp: string | RegExp, opti
   const assert = getExpectWithSoftOption(options);
   await assert(getPage()).toHaveTitle(titleOrRegExp, options);
 }
+
+//create functions
